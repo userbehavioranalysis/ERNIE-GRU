@@ -1,0 +1,4 @@
+model_name,precision,recall,f1,duration_sec
+deepseek-r1:671b,0.8653,0.9447,0.9033,263.14
+deepseek-r1:32b,0.8602,0.9046,0.8818,105.56
+deepseek-r1:7b,0.8183,0.5098,0.6282,32.74

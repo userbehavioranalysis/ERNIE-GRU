@@ -6,7 +6,7 @@
 ```yaml
 Config file: Env_For_LLM(anaconda).yaml
 Features:
-- Supports LLM fine-tuning and inference
+- Supports LLM inference
 - Integrates langchain library
 ```
 

@@ -7,8 +7,7 @@
 Config file: Env_For_LLM(anaconda).yaml
 Features:
 - Supports LLM fine-tuning and inference
-- Integrates HuggingFace Transformers library
-- Supports mixed-precision training
+- Integrates langchain library
 ```
 
 ### 2. ERNIE/BERT Environment (Env_For_ErnieBert)
@@ -17,7 +16,6 @@ Config file: Env_For_ErnieBert(anaconda).yaml
 Features:
 - Supports ERNIE/BERT model training
 - Integrates PaddlePaddle framework
-- Supports multi-GPU distributed training
 ```
 
 ## Code Structure
@@ -35,15 +33,16 @@ code-submit/
 ```
 
 ## Workflow
-1. Data Preprocessing:
+1. LLM experiments:
 ```bash
 conda activate Env_For_LLM
 label_dealing_for_LLM.ipynb
+LLM.ipynb
 ```
 
-2. Model Training:
+2. ERNIE/BERT experiments:
 ```bash
-# ERNIE training
+# ERNIE experiments
 conda activate Env_For_ErnieBert
 Ernie.ipynb
 
@@ -52,13 +51,7 @@ conda activate Env_For_ErnieBert
 Bert.ipynb
 ```
 
-3. Result Analysis:
-```
-model_experiment_results.csv
-```
-
 ## Important Notes
 1. Maintain environment isolation to avoid dependency conflicts
 2. Execute data preprocessing first
 3. Experiment parameters are configured in notebook header cells
-4. Model checkpoints auto-save to data_and_checkpoints
